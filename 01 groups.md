@@ -11,7 +11,7 @@ $$
 
 ## Symmetry
 
-What is symmetry? It's actually not the
+What is symmetry? It's actually not immediately obvious.
 
 ## Groups
 
