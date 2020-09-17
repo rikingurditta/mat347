@@ -20,6 +20,7 @@ The set of left cosets of $G$ with respect to $H$ is denoted $G / H$, and the ri
 The different cosets of $H$ in $G$ are disjoint, so if $xH \cap yH \neq \emptyset$ then $xH = yH$.
 
 **Proof.** Suppose  $xH \cap yH \neq \emptyset$. Then there are $a, b \in H$ so that $xa = yb$. Then,
+
 $$
 \begin{align*}
 x a &= y b \\
@@ -61,9 +62,11 @@ $$
 #### Index of a subgroup
 
 If we know $\abs H$ and $\abs G$, then the number of cosets is called the **index** of $H$ in $G$. The index is denoted by $[G : H]$ and is computed by
+
 $$
 [G:H] = \frac{\abs G}{\abs H}
 $$
+
 The index can also be computed for infinite groups and infinite cosets, e.g. if $G = \Z$ and $H = n\Z$ then $[G:H] = n$.
 
 ## Normal subgroups
@@ -73,10 +76,13 @@ Left and right cosets of a subgroup $H \leq G$ are not necessarily the same (unl
 For example, consider the triangle group $D_3 = \curlies{e, \rho, \rho^2, r, r\rho, r\rho^2}$. Consider the subgroup $H = \angles{\rho} = \curlies{e, \rho, \rho^2}$, the rotations. $rH = Hr$, so $H$ is a normal subgroup.
 
 Normal subgroups are useful because we can "multiply" their cosets nicely, i.e. if we consider the product
+
 $$
 xH \cdot yH = \curlies{xhyh': h, h' \in H}
 $$
+
 then as long as $H$ is a normal subgroup,
+
 $$
 xH \cdot yH = (xy)H
 $$
@@ -88,8 +94,10 @@ If $H \trianglelefteq G$, then $G / H\ (= H \backslash G)$ with the product defi
 For example, for any $n$, $n\Z \trianglelefteq \Z$, so the quotient $\curlies{n\Z, 1 + n\Z, ..., (n-1) + n\Z}$ is a group.
 
 Recall that since $n\Z$ is normal, the operation on the cosets is the group operation on the elements defining the cosets, so
+
 $$
 (a + n\Z) + (b + n\Z) = (a+b) + n\Z
 $$
+
 Notice that $x + n\Z = (x+n) + n\Z$ - we recognize this group as the integers with addition mod $n$.
 
