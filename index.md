@@ -5,3 +5,5 @@
 ## Table of Contents
 
 1. [Groups](01 groups)
+2. [Cosets](02 cosets)
+
