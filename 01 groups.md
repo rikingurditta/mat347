@@ -88,7 +88,7 @@ $$
 
 A group of the form $G = \angles x$ is called a cyclic group.
 
-![image-20200917163757945](/Users/rikin/Library/Application Support/typora-user-images/image-20200917163757945.png)
+![cyclic group 8th partition of unity.png](cyclic group 8th partition of unity.png)
 
 e.g. the picture above is of $\angles{e^{i\pi/4}} \leq \C^\times$
 
