@@ -71,7 +71,7 @@ The index can also be computed for infinite groups and infinite cosets, e.g. if 
 
 ## Normal subgroups
 
-Left and right cosets of a subgroup $H \leq G$ are not necessarily the same (unless the group is commutative). However, sometimes they are - in this case, the subgroup is called **normal**, and we write $H \trianglelefteq G$.
+Left and right cosets of a subgroup $H \leq G$ are not necessarily the same (unless the group is commutative). However, sometimes they are, i.e. $gH = Hg$ for every $g \in G$ - in this case, the subgroup is called **normal**, and we write $H \trianglelefteq G$.
 
 For example, consider the triangle group $D_3 = \curlies{e, \rho, \rho^2, r, r\rho, r\rho^2}$. Consider the subgroup $H = \angles{\rho} = \curlies{e, \rho, \rho^2}$, the rotations. $rH = Hr$, so $H$ is a normal subgroup.
 
