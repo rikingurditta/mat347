@@ -73,9 +73,11 @@ The index can also be computed for infinite groups and infinite cosets, e.g. if 
 
 Left and right cosets of a subgroup $H \leq G$ are not necessarily the same (unless the group is commutative). However, sometimes they are, i.e. $gH = Hg$ for every $g \in G$ - in this case, the subgroup is called **normal**, and we write $H \trianglelefteq G$.
 
+We can alternately write this condition as $gH\inv g = H$. Another sufficient condition for $H$ to be normal is for all $g \in G$, there is a $k \in G$ so that $gH = Hk$.
+
 For example, consider the triangle group $D_3 = \curlies{e, \rho, \rho^2, r, r\rho, r\rho^2}$. Consider the subgroup $H = \angles{\rho} = \curlies{e, \rho, \rho^2}$, the rotations. $rH = Hr$, so $H$ is a normal subgroup.
 
-Normal subgroups are useful because we can "multiply" their cosets nicely, i.e. if we consider the product
+Normal subgroups are useful because we can use our operation on their cosets nicely, i.e. if we define the operation
 
 $$
 xH \cdot yH = \curlies{xhyh': h, h' \in H}
@@ -86,6 +88,8 @@ then as long as $H$ is a normal subgroup,
 $$
 xH \cdot yH = (xy)H
 $$
+
+
 
 ### Quotient groups
 
@@ -101,3 +105,16 @@ $$
 
 Notice that $x + n\Z = (x+n) + n\Z$ - we recognize this group as the integers with addition mod $n$.
 
+#### Rotations of $\R^3$
+
+Consider the group of rotations of $\R^3$, $SO(3)$. Let $H$ be the rotations around the vertical axis, then any matrix in $H$ can be written as
+$$
+\begin{pmatrix}
+\cos\theta & \sin\theta & 0 \\
+-\sin\theta & \cos\theta & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+$$
+$H$ can be identified with $SO(2)$, so clearly it is a group, so $H < SO(3)$. However, it is not a normal subgroup. We will still consider its set of coset $SO(3) / H$.
+
+If $\mathbf n = (0, 0, 1) \in \R^3$ is the north pole, then for each $\mathbf p \in \mathbb S^2$, here is a matrix $\Omega \in SO(3)$ so that $\Omega \mathbf p = \mathbf n$. Furthermore, a matrix $M \in H$ keeps $\mathbf n$ fixed, so $\Omega M \mathbf p = n$. This holds for every $M \in H$. Thus, we can associate the coset $\Omega H$ with $\mathbf p$. Now we have found a bijection between the cosets of $H$ and $\mathbb S^2$.
