@@ -5,7 +5,6 @@ $$
 \newcommand{\curlies}[1]{\left\lbrace #1 \right\rbrace}
 \newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
 \newcommand{\angles}[1]{\left\langle #1 \right\rangle}
-
 \newcommand{\inv}[1]{#1^{-1}}
 $$
 
@@ -32,6 +31,7 @@ The **kernel** of a homomorphism $\phi$ is the set $\ker(\phi) = \curlies{g \in 
 Suppose $g, g' \in \ker(\phi)$. Then $\phi(g) = e = \phi(g')$, so $\phi(gg') = \phi(g)\phi(g') = ee = e$, so $gg' \in \ker(\phi)$. 
 
 Suppose $g \in \ker(\phi)$, then
+
 $$
 \begin{align*}
 \phi(\inv g) &= e\phi(\inv g) \\
@@ -41,6 +41,7 @@ $$
 &= e
 \end{align*}
 $$
+
 so $\inv g \in \ker(\phi)$.
 
 #### $\ker(\phi)$ is a normal subgroup
@@ -50,25 +51,32 @@ so $\inv g \in \ker(\phi)$.
 ## Direct product of two groups
 
 If $G, K$ are groups, their **(direct) product** is
+
 $$
 G \times K = \curlies{(g, k) : g \in G, k \in K}
 $$
+
 with the group operation
+
 $$
 (g_1, k_1) * (g_2, k_2) = (g_1g_2, k_1k_2)
 $$
+
 This is a group! Its identity is $e_{G \times K} = (e_G, e_K)$
 
 ### $\overline G$ and $\overline K$
 
 In $G \times K$, there are two obvious subgroups:
+
 $$
 \begin{align*}
 \overline G &= \curlies{(g, e_K) : g \in G} \\
 \overline K &= \curlies{(e_G, k) : k \in G}
 \end{align*}
 $$
+
 Both of these are normal: suppose $(g, k) \in G \times K$, then
+
 $$
 \begin{align*}
 (g, k) \overline G (g, k)^{-1} &= (g, k) \overline G (\inv g, \inv k) \\
@@ -99,6 +107,7 @@ Notice that $D_3$, the symmetry group of the triangle, is equal to $S_3$, the se
 We can write **cycles** as $(1\ 2\ 3)$, denoting the permutation taking 1 to 2, 2 to 3, and 3 to 1. A cycle with 2 symbols is called a **transposition**, and in general a cycle with $k$ symbols is called a **$k$-cycle**. A $k$-cycle in $S_n$ has order $k$. Note that $(1\ 2\ 3) = (2\ 3\ 1)$.
 
 We can take products of cycles by applying them sequentially from right to left. For example, if $[1\ 2\ 3\ 4]$ is our list, then
+
 $$
 \begin{align*}
 (1\ 2\ 3) (3\ 4)[1\ 2\ 3\ 4] &= (1\ 2\ 3)[1\ 2\ 4\ 3] \\
@@ -106,6 +115,7 @@ $$
 &= (1\ 2\ 3\ 4)[1\ 2\ 3\ 4]
 \end{align*}
 $$
+
 So $(1\ 2\ 3)(3\ 4) = (1\ 2\ 3\ 4)$
 
 Any permutation can be written as a product of disjoint cycles. This product is unique up to rotations (i.e. $(1\ 2\ 3) = (2\ 3\ 1)$) and reorderings (since disjoint cycles commute).
