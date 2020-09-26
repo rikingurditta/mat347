@@ -33,7 +33,7 @@ A **group** is a set $G$ with a binary operation $\cdot$ which satisfies:
 - if $M_n(F)$ are the $n \times n$ matrices over $F$
   - this set with matrix multiplication is not a group because not every matrix has an inverse
   - if we define $GL(n, F)$ as all of the $n \times n$ matrices over $F$ with inverses, then $(GL(n, F), \cdot)$ is a group.
-- Consider an equilateral triangle, it is preserved under rotation by multiples of $2\pi/3$ and reflections over medians. Together with $e$, the transformation that does nothing, these transformations form a group ($D_3$)
+- Consider an equilateral triangle, it is preserved under rotation by multiples of $2\pi/3$ and reflections over medians. Together with $e$, the transformation that does nothing, these transformations form a group ($D_6$)
   - ![triangle dihedral group](triangle dihedral group.png)
   - $\rho$ is a rotation by $2\pi/3$ and $r$ is a reflection
   - the way $\rho$ and $r$ transform the triangle are what we can think of as symmetries
@@ -97,7 +97,7 @@ Notice that $\Z$ is a cyclic group! We refer to it as *the* infinite cyclic grou
 
 The **order of a group $G$** is the number of elements of $G$, written as $\abs G$.
 
-- $\abs{D_3} = 6$ (the triangle group)
+- $\abs{D_6} = 6​ (the triangle group)
 - $\abs{\Z} = \infty$
 - $\abs{\curlies{e, \rho, \rho^2}} = 3$
 

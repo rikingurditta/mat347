@@ -1,4 +1,4 @@
-# More on groups
+# More on Groups
 
 $$
 \newcommand{\ds}{\displaystyle}
@@ -20,7 +20,7 @@ Also note that every homomorphism maps $e$ to $e$. Suppose $g \in G$, then $\phi
 
 If $\phi$ is also a bijection, then $\phi$ is an **isomorphism**.
 
-If there exists an isomorphism between two groups $G$ and $K$, then we say $G$ and $K$ are **isomorphic**.
+If there exists an isomorphism between two groups $G$ and $K$, then we say $G$ and $K$ are **isomorphic**, and we write $G \cong K$.
 
 ### Kernel of a homomorphism
 
@@ -98,9 +98,9 @@ These maps are isomorphisms. The kernel of $p_G$ is clearly $\ker(p_G) = \curlie
 
 ## Symmetric groups
 
-Suppose $n \in \N$, then the **symmetric group** $S_n$ is the set of permutations of $n$ symbols, usually $\curlies{1, ..., n}$. We know that $\abs{S_n} = n!$
+Suppose $n \in \N$, then the **symmetric group** $S_n$ is the set of permutations of $n$ symbols, usually $\curlies{1, ..., n}$. We know that $\abs{S_n} = n!$.
 
-Notice that $D_3$, the symmetry group of the triangle, is equal to $S_3$, the set of permutations of 3 symbols!
+Notice that $D_6$, the symmetry group of the triangle, is equal to $S_3$, the set of permutations of 3 symbols!
 
 ### Notation for permutations
 
