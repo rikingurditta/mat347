@@ -8,3 +8,4 @@
 2. [Cosets](02 cosets)
 3. [More on Groups](03 more on groups)
 4. [Even More on Groups](04 even more on groups)
+5. [Group Actions](05 group actions)
