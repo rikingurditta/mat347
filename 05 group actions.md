@@ -84,14 +84,17 @@ Then we can come up with conjugation as a group action:
 $$
 C_g = L_g \cdot R_g = R_g \cdot L_g : x \mapsto g x \inv g
 $$
+
 And the set of conjugations $C = \curlies{C_g : g \in G}$.
 
 ### Conjugacy classes
 
 Then for each $x \in G$, the orbit of $C$ is
+
 $$
 C \cdot x = \curlies{C_g(x) = g x \inv g}
 $$
+
 The set of all orbits $\curlies{C \cdot x : x \in G}$ is the set of **conjugacy classes** of $G$.
 
 ### Cyclic group parity

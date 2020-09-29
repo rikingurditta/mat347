@@ -107,6 +107,7 @@ Notice that $x + n\Z = (x+n) + n\Z$ - we recognize this group as the integers wi
 #### Rotations of $\R^3$
 
 Consider the group of rotations of $\R^3$, $SO(3)$. Let $H$ be the rotations around the vertical axis, then any matrix in $H$ can be written as
+
 $$
 \begin{pmatrix}
 \cos\theta & \sin\theta & 0 \\
@@ -114,6 +115,7 @@ $$
 0 & 0 & 1
 \end{pmatrix}
 $$
+
 $H$ can be identified with $SO(2)$, so clearly it is a group, so $H < SO(3)$. However, it is not a normal subgroup. We will still consider its set of coset $SO(3) / H$.
 
 If $\mathbf n = (0, 0, 1) \in \R^3$ is the north pole, then for each $\mathbf p \in \mathbb S^2$, here is a matrix $\Omega \in SO(3)$ so that $\Omega \mathbf p = \mathbf n$. Furthermore, a matrix $M \in H$ keeps $\mathbf n$ fixed, so $\Omega M \mathbf p = n$. This holds for every $M \in H$. Thus, we can associate the coset $\Omega H$ with $\mathbf p$. Now we have found a bijection between the cosets of $H$ and $\mathbb S^2$.
