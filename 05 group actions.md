@@ -96,7 +96,3 @@ C \cdot x = \curlies{C_g(x) = g x \inv g}
 $$
 
 The set of all orbits $\curlies{C \cdot x : x \in G}$ is the set of **conjugacy classes** of $G$.
-
-### Cyclic group parity
-
-Suppose $\sigma \in S_n$, then it can be written as a composition of transpositions (2-cycles). If $\sigma$ is written as a composition of $k$ transpositions, then the **parity** of $\sigma$ is whether $k$ is even or odd.
