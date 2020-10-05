@@ -51,7 +51,7 @@ For example, if $\mathbf n \in \Sp^2$ is the north pole, then $SO(2) \cdot \math
 
 #### Stability group and orbits
 
-If $H$ is the stability group of $S$, then each coset of $H$ corresponds uniquely to an element of the orbit $G \cdot s$ (so $G \cdot s$ "is" the cosets of $H$)
+If $H$ is the stability group of $s$, then each coset of $H$ corresponds uniquely to an element of the orbit $G \cdot s$ (so $G \cdot s$ "is" the cosets of $H$)
 
 ### Groups acting on themselves
 

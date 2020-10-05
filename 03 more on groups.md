@@ -126,11 +126,14 @@ Suppose $\sigma \in S_n$, then it can be written as a composition of transpositi
 
 ## Polynomials?
 
-Consider a polynomial $V$ (Van der Monde) over $n$ variables $x_1, ..., x_n$
+Consider a polynomial $V$ (Vandermonde) over $n$ variables $x_1, ..., x_n$
+
 $$
 V = \prod_{1 \leq i < j \leq n} (x_i - x_j)
 $$
+
 An irrelevant fact is
+
 $$
 V = \pm\det\begin{pmatrix}
 1 & x_1 & .. & x_1^{n-1} \\
@@ -139,13 +142,16 @@ V = \pm\det\begin{pmatrix}
 1 & x_n & .. & x_n^{n-1} \\
 \end{pmatrix}
 $$
+
 If $\sigma \in S_n$, we can let it permute $x_1, ..., x_n$ by taking $x_i$ to $x_{\sigma(i)}$. Then,
+
 $$
 \sigma V = \prod_{1 \leq i < j \leq n} (x_{\sigma(i)} - x_{\sigma(j)})
 $$
+
 The same factors are being multiplied, but in some cases they are flipped (i.e. sometimes $x_i - x_j$ will be flipped to $x_j - x_i$). Thus, $\sigma V$ is either $V$ or $-V$. If an even number of factors are flipped, then $\sigma V = V$, otherwise $\sigma V = -V$.
 
 Suppose $\sigma = (p, q)$ is a single transposition. Then, applying it to $V$:
 
 - a factor $x_i - x_j$ where $\curlies{i, j} \cap \curlies{p, q} = \emptyset$ is unaffected
-- 
+- the factor $x_p - x_q$ is flipped to $x_q - x_p$
