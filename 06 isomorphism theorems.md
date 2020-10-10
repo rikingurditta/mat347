@@ -19,6 +19,7 @@ Suppose $H, K \leq G$ are subgroups but not necessarily normal. Define $HK = \cu
 ($\Rightarrow$) Suppose $HK \leq G$, we will prove that $HK = KH$.
 
 If $h, h' \in H$ and $k, k' \in K$, then $hk \cdot h'k' \in HK$, so there exist $x \in H$, $y \in K$ so that $hkh'k' = xy$. Then
+
 $$
 \begin{align*}
 hkh'k' &= x y \\
@@ -26,11 +27,13 @@ kh' &= \inv h x y \inv{(k')} \\
 kh' &= (\inv h x) (y \inv{(k')})
 \end{align*}
 $$
+
 so $kh'$ is a product of elements of $H$ and $K$, so $kh' \in HK$. since $k, h'$ were arbitrary, this is true for all $kh' \in KH$, so $KH \subseteq HK$. By symmetry, $HK \subseteq KH$.
 
 ($\Leftarrow$) Suppose $HK = KH$, we wll prove that $HK \leq G$.
 
 Suppose $h, h' \in H$ and $k, k' \in K$. Since $HK = KH$, $kh' \in HK$, so let $x \in H$ and $y \in K$ be such that $kh' = xy$.
+
 $$
 \begin{align*}
 hk \cdot h'k' &= h (kh') k' \\
@@ -38,6 +41,7 @@ hk \cdot h'k' &= h (kh') k' \\
 &= (hx)(yk) \in HK
 \end{align*}
 $$
+
 So $HK$ is closed under multiplication.
 
 Suppose $h \in H$ and $k \in K$, then $hk \in HK$. Then, taking its inverse, $(hk)^{-1} = \inv k \inv h \in KH = HK$, so $HK$ is closed under inverses.
@@ -54,7 +58,9 @@ Thus, the number of cosets of $K$ in $HK$ the same as the number of cosets of $H
 $$
 [HK : K] = [H : H \cap K] = \frac{\abs H}{\abs{H \cap K}}
 $$
+
 Each coset of $K$ in $HK$ has $\abs K$ elements, so the number of elements in $HK$ is
+
 $$
 \abs{HK} = [HK : K] \cdot \abs K = \frac{\abs H \abs K}{\abs{H \cap K}}
 $$
@@ -69,9 +75,11 @@ Suppose $\phi : G \to H$ is a homomorphism, and let $K = \ker(\phi) = \curlies{g
 **Proof.**
 
 Suppose $k \in K$ and $g \in G$. Then,
+
 $$
 \phi(gk\inv g) = \phi(g) \phi(k) \phi(\inv g) = \phi(g) e \phi(g)^{-1} = \phi(g) \phi(g)^{-1} = e
 $$
+
 so $gK\inv g = K$, so $K$ is normal.
 
 Let $\Phi : G/K \to H$ be defined by $\Phi(gK) = \phi(g)$.
@@ -85,9 +93,11 @@ $$
 &= \phi(g') \tag{since $k, k' \in K = \ker(\phi)$}
 \end{align*}
 $$
+
 Thus, $\Phi$ is well-defined.
 
 Now we will show that $\Phi$ is a homomorphism.
+
 $$
 \begin{align*}
 \Phi(gK \cdot g'K) &= \Phi(gg' K) \\
@@ -96,9 +106,11 @@ $$
 &= \phi(gK) \phi(g'K)
 \end{align*}
 $$
+
 Clearly,  our two function have the same image, i.e. $\Phi(G/K) = \phi(G)$. Showing that $\Phi$ is injective will prove that it is an isomorphism.
 
 Suppose $\Phi(gK) = \Phi(g'K)$, then
+
 $$
 \begin{align*}
 \Phi(gK) (\Phi(g'K))^{-1} &= e \\
@@ -120,12 +132,14 @@ Let $N$ be a normal subgroup of $G$, then the homomorphism $\phi : G \to G/N$ de
 Similarly, in a direct product $G_1 \times G_2$, then the homomorphism $\phi(g_1, g_2) = g_2$ is also called a **projection**, and $(G_1 \times G_2)/(G_1 \times \curlies{e})$ is normal.
 
 If we consider the map
+
 $$
 \begin{align*}
 \phi : \R &\to \Sp^1 \\
 t &\mapsto e^{2\pi i t}
 \end{align*}
 $$
+
 then its kernel is $\ker(\phi) = \Z$, so $\R/\Z \cong \Sp^1$.
 
 ## The Second Isomorphism Theorem
@@ -152,24 +166,29 @@ This theorem is often referred to as the *diamond theorem* because of the shape 
 **Proof.**
 
 To show that $AB \leq G$, it suffices to show that $AB = BA$. Suppose $a \in A$, $b \in B$, then since $A \leq N_G(B)$, $ab\inv a = b' \in B$.
+
 $$
 \begin{align*}
 ab &= (ab\inv a) a \\
 &= b' a \in BA
 \end{align*}
 $$
+
 so $AB \subseteq BA$. We can similarly show that $BA \subseteq AB$, so $AB = BA$, so $AB \leq G$.
 
 Now we will prove that $A \cap B \trianglelefteq A$. Suppose $x \in A \cap B$ and $a \in A$. Since $x \in A$, $ax\inv a \in A$. Since $x \in B$ and $A \leq N_G(B)$, $ax\inv a \in B$. Thus, $ax\inv a \in A \cap B$, so $A \cap B \trianglelefteq A$.
 
 Now we will prove that $AB / B \cong A / (A \cap B)$. We define
+
 $$
 \begin{align*}
 \phi : AB &\to A/(A \cap B) \\
 ab &\mapsto a(A \cap B)
 \end{align*}
 $$
+
 Suppose $ab = a'b'$, then $\inv{(a')} a = b' \inv b$. The left is in $A$ and the right is in $B$ but they are equal, so both sides are in $A \cap B$. $a = a'b'\inv b$, so $a(A \cap B) = a'b'\inv b = a'(A \cap B)$. Thus, $\phi$ is well-defined. Now we will show that it is a homomorphism:
+
 $$
 \begin{align*}
 \phi(aba'b') &= \phi(aa'\inv{(a')} b a' b') \\
@@ -180,6 +199,7 @@ $$
 &= \phi(ab) \phi(a'b')
 \end{align*}
 $$
+
 Thus, $\phi$ is a homomorphism.
 
 Its kernel is
@@ -187,16 +207,21 @@ Its kernel is
 ## The Third Isomorphism Theorem
 
 Suppose $N \trianglelefteq G$, $K \trianglelefteq G$, and $N \trianglelefteq K$. Then $K/N \trianglelefteq G/N$ and
+
 $$
 (G/N)/(K/N) \cong G/K
 $$
+
 We will prove this using the first isomorphism theorem, by creating a map $\phi : G/K \to (G/N)/(N/K)$.
 
 We define $\phi$ by
+
 $$
 \phi(gK) = gN(K/N)
 $$
+
 To show that $\phi$ is well-defined, suppose $gK = g'K$. Then $g = g'k$ for some $k \in K$. Then
+
 $$
 \begin{align*}
 gN(K/N) &= g'k N(K/N) \\
@@ -205,13 +230,16 @@ gN(K/N) &= g'k N(K/N) \\
 &= g'N(K/N)
 \end{align*}
 $$
+
 So $\phi(gK) = \phi(g'K)$ whenever $gK = g'K$.
 
 Now we want to find $\ker(\phi)$, so we want to find when $\phi(gK) = e = K/N$.
 
 So $\phi(gK) = gN(K/N) = K/N$, so we want $gN \subseteq K/N$, so $gN \subseteq \curlies{kN : k \in K}$, so $g \in K$. Thus, $\phi(gK) = e$ if $g \in K$, so
+
 $$
 \ker(\phi) = \curlies{kK : k \in K} = K/K = \curlies e
 $$
+
 Thus, $\phi$ is an isomorphism, so we have found an isomorphism between $G/K$ and $(G/N)/(K/N)$.
 
