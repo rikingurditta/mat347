@@ -243,3 +243,8 @@ $$
 
 Thus, $\phi$ is an isomorphism, so we have found an isomorphism between $G/K$ and $(G/N)/(K/N)$.
 
+## The Fourth Isomorphism Theorem (Lattice Isomorphism Theorem)
+
+If $N \trianglelefteq G$, then the subgroups of $G/N$ correspond to the the subgroups of $G$ containing $N$
+
+[...]
