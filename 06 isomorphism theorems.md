@@ -55,6 +55,7 @@ Note that $\ds HK = \bigcup_{h \in H} hK$, however these cosets are not necessar
 Suppose $hK = h'K$, so there exist $k, k' \in K$ so that $hk = h'k'$. Then $\inv h h' = k\inv{(k')} \in K$, so $\inv h h' \in H \cap K$. Then we can conclude that $h, h'$ are in the same coset of $H \cap K$ in $H$.
 
 Thus, the number of cosets of $K$ in $HK$ the same as the number of cosets of $H \cap K$ in $H$, so 
+
 $$
 [HK : K] = [H : H \cap K] = \frac{\abs H}{\abs{H \cap K}}
 $$
@@ -159,7 +160,7 @@ Suppose $A, B \leq G$ and $A \leq N_G(B)$. Then,
 
 This is expressed in the following lattice diagram:
 
-![image-20201005163327895](/Users/rikin/Documents/School Stuff/2020-2021/mat347/mat347-notes/second isomorphism theorem lattice diagram.png)
+![second isomorphism theorem lattice diagram.png](second isomorphism theorem lattice diagram.png)
 
 This theorem is often referred to as the *diamond theorem* because of the shape of this lattice diagram.
 
