@@ -10,4 +10,6 @@
 4. [Even More on Groups](04 even more on groups)
 5. [Group Actions](05 group actions)
 6. [The Isomorphism Theorems](06 isomorphism theorems)
+7. [Prime Orders](07 prime orders)
+8. [Alternating Groups](08 alternating groups)
 

@@ -1,5 +1,15 @@
 # Prime Orders
 
+$$
+\newcommand{\ds}{\displaystyle}
+\newcommand{\curlies}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\angles}[1]{\left\langle #1 \right\rangle}
+\newcommand{\inv}[1]{#1^{-1}}
+
+\newcommand{\Sp}{\mathbb S}
+$$
+
 ## Prime-ordered elements
 
 Suppose $G$ is abelian, $n = \abs G$, and $p$ is a prime where $p \mid n$. Then $G$ contains an element of order $p$.

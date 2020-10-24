@@ -97,7 +97,7 @@ Notice that $\Z$ is a cyclic group! We refer to it as *the* infinite cyclic grou
 
 The **order of a group $G$** is the number of elements of $G$, written as $\abs G$.
 
-- $\abs{D_6} = 6​ (the triangle group)
+- $\abs{D_6} = 6$ (the triangle group)
 - $\abs{\Z} = \infty$
 - $\abs{\curlies{e, \rho, \rho^2}} = 3$
 
