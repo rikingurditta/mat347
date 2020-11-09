@@ -6,7 +6,7 @@ $$
 \newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
 \newcommand{\angles}[1]{\left\langle #1 \right\rangle}
 \newcommand{\inv}[1]{#1^{-1}}
-\newcommand{\divides}{{\large\mid}}
+\newcommand{\divides}{ {\large\mid} }
 
 \newcommand{\Sp}{\mathbb S}
 $$
