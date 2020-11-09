@@ -46,7 +46,7 @@ $$
 Consider a normal subgroup of $G$ which is contained in $H$, so $N \trianglelefteq G$ and $N \leq H$. Tthen $xN\inv x = N \leq H$ for all $x \in G$, so $N = xN\inv x \leq xH\inv x$ for every $x$, so
 
 $$
-N \subseteq \bigcup_{x \in G} xH\inv x = \ker(\phi)
+N \subseteq \bigcap_{x \in G} xH\inv x = \ker(\phi)
 $$
 
 Thus $\ker(\phi)$ is the largest normal subgroup of $G$ that is contained in $H$.
