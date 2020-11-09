@@ -16,12 +16,14 @@ $$
 ## Groups acting on their normal subgroups
 
 If $H \leq G$, then $N_G(H)$ acts on $H$ by conjugation. Thus there is a homomorphism
+
 $$
 \begin{align*}
 \psi : N_G(H) &\to Aut(H) \\
 g &\mapsto \text{conjugation by } g
 \end{align*}
 $$
+
 Then by the first isomorphism theorem, there exists an isomorphism from $N_G(H) / C_G(H)$ to a subgroup of $Aut(H)$.
 
 ### Examples of automorphisms

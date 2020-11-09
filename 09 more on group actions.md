@@ -88,6 +88,7 @@ Thus the size of the conjugacy class of $x$ is $\ds \frac{\abs G}{\abs{C_G(x)}}$
 ### Example: $(1\ 2\ 3) \in S_3$
 
 Consider $\rho = (1\ 2\ 3) \in S_3$. $e, \rho, \rho^2$ all commute with $\rho$, so they are in the centralizer of $\rho$. However, transpositions do not commute with $\rho$, so they are not in the centralizer. Thus the centralizer has size 3, so the conjugacy class of $\rho$ has size
+
 $$
 \frac{\abs G}{\abs{C_G(\rho)}} = \frac{6}{3} = 2
 $$
@@ -95,6 +96,7 @@ $$
 ### Example: 5-cycles in $S_5$
 
 For another example, we will work out the size of a centralizer. Consider $s = (1\ 2\ 3\ 4\ 5) \in S_5$. Then since conjugation is the same as relabelling, we know that the conjugacy class of $p$ is the set of all 5-cycles, which has size $4! = 24$. Then we can work out the size of the centralizer:
+
 $$
 \begin{align*}
 24 &= \frac{\abs G}{\abs{C_G(s)}} \\
@@ -103,31 +105,38 @@ $$
 &= 5
 \end{align*}
 $$
+
 We know that $e, s, s^2, s^3, s^4$ are all in $C_G(s)$, so they must be the entirety of $C_G(s)$.
 
 ### The Class Equation
 
 Recall that $G$ is partitioned into conjugacy classes. We can take a representative $g_0 = e, g_1, ..., g_k$ for each one, and we can consider the size of $G$:
+
 $$
 \begin{align*}
 \abs G &= \sum \abs{\text{conjugacy classes}} \\
 &= \sum_i \frac{\abs G}{\abs{C_G(g_i)}}
 \end{align*}
 $$
+
 Note that $\ds \frac{\abs G}{\abs{C_G(g_i)}} = 1$ when $g_i \in Z_G$. We can use this fact to simplify our equation, by first rewriting our representatives. Suppose $r_1, ..., r_m$ are the representatives that are not in the centre, then
+
 $$
 \abs G = \abs{Z_G} + \sum_i \frac{\abs G}{\abs{C_G(r_i)}}
 $$
+
 This is the **class equation**.
 
 ### If $p$ is a prime and $\abs G = p^n$ where $n \geq 1$, then $G$ has a non-trivial centre
 
 By the class equation,
+
 $$
 \begin{align*}
 \abs G = \abs{Z_G} + \sum_{i=1}^m \frac{\abs G}{\abs{C_G(g_i)}}
 \end{align*}
 $$
+
 Since each centralizer $C_G(g_i)$ is a proper subgroup of $G$, its size divides the size of $G$, so $\abs{C_G(g_i)} = p^\ell$ for some $\ell < m$. Thus, $p$ divides the summation. Since $p$ divides $\abs G$, $p$ must divide $\abs{Z_G}$ as well, so $\abs{Z_G} \neq 1$.
 
 ### $A_5$ is simple
