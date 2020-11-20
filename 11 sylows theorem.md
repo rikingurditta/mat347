@@ -99,3 +99,30 @@ $$
 $$
 
 [...]
+
+[rewrite all of this sometime lol]
+
+## Applications of Sylow's Theorem
+
+## Groups of order 9
+
+Suppose $\abs G = 9 = 3^2$. $G$ is a 3-group.
+
+Using the class equation, we know that a $p$-group has a non-trivial centre, so $Z(G) \neq \curlies e$.
+
+If $Z(G) = G$, i.e. $G$ is abelian, then $G$ is either cyclic or a product of cyclic groups, i.e.
+
+$$
+G \cong \Z/9\Z \text{ or } G \cong \Z/3\Z \times \Z/3\Z
+$$
+
+Suppose $Z(G) \neq G$, so $\abs{Z(G)} \neq 9$. Since $\Z(G)$ is a subgroup of $G$, its order must divide 9, so $\abs{Z(G)} = 3$. This means that $Z(G)$ is cyclic, so $Z(G) = \angles x$.
+
+$Z(G)$ is a normal subgroup of $G$, so we can consider the group $G/Z(G)$. Its order is 3, so it must be cyclic. Thus, if $y \in G$, then considering the coset $\overline y = y \cdot Z(G) \in G/Z(G)$, we have $\overline{y}^3 = e$. This means that either $\abs y = 3$ or $\abs y = 9$.
+If $\abs y = 9$, then $G$ is cyclic, which is a contradiction.
+
+If $\abs y = 3$, then if $x \in Z(G)$, then $xy = yx$. We can conclude that $G \cong \Z/3\Z \times \Z/3\Z$, which means that it is abelian, which means we have contradicted ourselves again.
+
+![image-20201119162339130](/Users/rikin/Library/Application Support/typora-user-images/image-20201119162339130.png)
+
+The same argument as above works for any group of order $p^2$ where $p$ is a prime.
