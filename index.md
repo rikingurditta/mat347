@@ -15,4 +15,7 @@
 9. [More on Group Actions](09 more on group actions)
 10. [Even More on Group Actions](10 even more on group actions)
 11. [Sylow's Theorem](11 sylows theorem)
+12. [Finitely Generated Abelian Groups](12 finitely generated abelian groups)
+13. [Semidirect Products](13 semidirect products)
+14. [Rings](14 rings)
 
