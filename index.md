@@ -18,4 +18,6 @@
 12. [Finitely Generated Abelian Groups](12 finitely generated abelian groups)
 13. [Semidirect Products](13 semidirect products)
 14. [Rings](14 rings)
+15. [Quotient Rings](15 quotient rings)
+16. [Ideals](16 ideals)
 
