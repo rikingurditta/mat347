@@ -19,9 +19,11 @@ $$
 Suppose $R$ is a ring with identity $1 \neq 0$ and $A \subseteq R$.
 
 Recall that the ideal $(A)$ is the smallest ideal containing $A$, i.e.
+
 $$
 (A) = \bigcap_{I \supseteq A \text{ is an ideal}} I
 $$
+
 If $A = \curlies{a}$, then $(A) = (a)$, and we call this a principal ideal
 
 If $A = \curlies{a_1, ..., a_n}$ (i.e. $A$ is finite), then $(A) = (a_1, ..., a_n)$ is called a finitely generated ideal
@@ -39,9 +41,11 @@ Then if $A = \curlies{a}$, then $RAR = R$.
 ### Example: (x, 2) in $\Z[x]$
 
 Let $I = (x, 2)$ in the ring of polynomials over the integes $\Z[x]$. Then
+
 $$
 I = \curlies{a_n x^n + ... + a_1 x + a_0 : 2 \divides a_0}
 $$
+
 However, $I$ is not a principal ideal:
 
 Suppose $I = (q(x))$ for some polynomial $q$. Then since $2 \in I$, we have $2 = r(x) q(x)$, so $q(x) \in \curlies{\pm 1, \pm 2}$.
@@ -64,7 +68,7 @@ Suppose $R$ is a commutative ring. $R$ is a field if and only if its only ideals
 
 ($\Rightarrow$) Suppose $R$ is a field, then every element has a multiplicative inverse, so every element is a unit. So if $I$ is a nonempty ideal, then it contains a unit, so it is equal to $R$.
 
-($\Leftarrow$) Suppose the only ideals of $R$ are $0$ and $R$.
+($\Leftarrow$) Suppose the only ideals of $R$ are $0$ and $R$, and let $x \in R$ be a nonzero element. Then $(x) = R$, so $1 \in (x)$. Since $(x)$ is an ideal, we know $(x) = R(x)$, so $1 = rx$ for some $r \in R$. Thus, $x$ has a multiplicative inverse, $r$. This holds for all nonzero $x \in R$.
 
 ## Maximal ideals
 

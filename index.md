@@ -20,4 +20,5 @@
 14. [Rings](14 rings)
 15. [Quotient Rings](15 quotient rings)
 16. [Ideals](16 ideals)
-
+17. [Rings of Fractions](17 rings of fractions)
+18. [Chinese Remainder Theorem](18 chinese remainder theorem)
