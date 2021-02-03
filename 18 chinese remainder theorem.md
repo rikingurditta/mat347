@@ -16,11 +16,11 @@ $$
 
 ## Chinese Remainder Theorem
 
-Suppose $gcd(m, n) = 1$, $0 \leq a < m$, and $0 \leq b < n$. Then there is a unique $k$ where $0 \leq k < nm$ so that $k \equiv a \mod m$ and $k \equiv b \mod n$.
+Suppose $gcd(m, n) = 1$, $0 \leq a < m$, and $0 \leq b < n$. Then there is a unique $k$ where $0 \leq k < nm$ so that $k \equiv a \bmod m$ and $k \equiv b \bmod n$.
 
-For example, if $m = 6, n = 5, a = 4, b = 2$, then we want to find a number $k < 30$ so that $k \equiv 4 \mod 6$ and $k \equiv 2 \mod 5$. The only one that works is 22.
+For example, if $m = 6, n = 5, a = 4, b = 2$, then we want to find a number $k < 30$ so that $k \equiv 4 \bmod 6$ and $k \equiv 2 \bmod 5$. The only one that works is 22.
 
-The theorem can be generalized as, for any set of $m_1, ..., m_r$ which are pairwise relatively prime, and with $a_1, ..., a_r$ with $0 \leq a_i < m_i$, then there is exactly one $\ds k < \prod_{i=1}^r m_i$ so that $k \equiv a_i \mod m_i$ for each $i$.
+The theorem can be generalized as, for any set of $m_1, ..., m_r$ which are pairwise relatively prime, and with $a_1, ..., a_r$ with $0 \leq a_i < m_i$, then there is exactly one $\ds k < \prod_{i=1}^r m_i$ so that $k \equiv a_i \bmod m_i$ for each $i$.
 
 ### Product rings
 
@@ -73,7 +73,9 @@ Suppose $A_1, A_2$ are comaximal, so $A_1 + A_2 = R$. Then there exist $x \in A_
 
 *Inductive step:*
 
-[...] (apparently easy)
+> "The induction is easy" or something like that
+>
+> \- Joe
 
 By induction, this holds for all $k$ pairwise comaximal ideals.
 
@@ -96,7 +98,9 @@ Thus, $\phi(R) = R/A_1 \times R/A_2$.
 
 *Inductive step:*
 
-[...]
+> "The induction is easy" or something like that
+>
+> \- Joe
 
 By induction, $\phi$ is always surjective when $A_1, ..., A_k$ are pairwise comaximal.
 
@@ -114,6 +118,23 @@ Looking at just the units of this ring, we see that
 $$
 (\Z/n\Z)^\times \cong (\Z/p_1^{\alpha_1}\Z)^\times \times ... \times (\Z/p_k^{\alpha_k}\Z)^\times
 $$
-Suppose $\varphi : \N \to \N$ is Euler's totient function, then $\varphi(n) = \abs{(\Z/n\Z)^\times}$ is the number of units in $\Z/n\Z$.
-
-[...]
+Suppose $\varphi : \N \to \N$ is Euler's totient function, then $\varphi(n) = \abs{(\Z/n\Z)^\times}$ is the number of units in $\Z/n\Z$, so
+$$
+\begin{align*}
+\varphi(n) &= \abs{(\Z/n\Z)^\times} \\
+&= \abs{(\Z/p_1^{\alpha_1}\Z)^\times} \cdot ... \cdot \abs{(\Z/p_k^{\alpha_k}\Z)^\times} \\
+&= \prod_{i=1}^k \varphi(p_i^{\alpha_i})
+\end{align*}
+$$
+In each ring $p_i^{\alpha_i}\Z$, the non-units are the multiples of $p_i$, since if $x = a p_i^m$, then $p^{\alpha_i - m}x = ap^{\alpha_i} \equiv 0 \bmod p^{\alpha_i}$. Thus every multiple of $p_i$ is a zero divisor, so it is not a unit. There are $p_i^{\alpha_i - 1}$ multiples of $p_i$, so
+$$
+\varphi(p_i^{\alpha_i}) = p_i^{\alpha_i} \left(1 - \frac{1}{p_i}\right)
+$$
+So computing it for $n$, we find
+$$
+\begin{align*}
+\varphi(p_i^{\alpha_i}) &= \prod_{i=1}^k \varphi(p_i^{\alpha_i}) \\
+&= \prod_{i=1}^k p_i^{\alpha_i} \left(1 - \frac{1}{p_i}\right) \\
+&= n \prod_{i=1}^k \left(1 - \frac{1}{p_i}\right)
+\end{align*}
+$$

@@ -83,7 +83,7 @@ Q &= \curlies{\frac{2m}{2n} : m, n \in \Z, n \neq 0} \\
 \end{align*}
 $$
 
-If $F$ is a field, $R = F[x]$, and $D = R \setminus \curlies{0}$, then $Q = F(x)$, field of rational functions.
+If $F$ is a field, $R = F[x]$, and $D = R \setminus \curlies{0}$, then $Q = F(x)$, the field of rational functions.
 
 Note that we can apply this to create the field of rational functions with integer coefficients starting from $R = \Z[x]$, however this set is the same as the field of rational functions with rational coefficients, i.e. constructing $Q$ starting from $\Q[x]$.
 

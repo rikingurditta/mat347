@@ -31,7 +31,7 @@ Suppose $G$ has order $\abs G = p^a m$ where $p \ndivides m$. Then,
 
 1. There exists a $p$-Sylow subgroup $P$.
 2. For a fixed $p$, all $p$-Sylow subgroups are conjugate
-3. For a fixed $p$, let $n_p(H)$ be the number of $p$-Sylow subgroups in a group $H$. Then $n_p(G)$ satisfies $n_p \equiv 1 \mod p$. Furthermore, $n_p(P) \divides \abs{G/N_G(P)}$.
+3. For a fixed $p$, let $n_p(H)$ be the number of $p$-Sylow subgroups in a group $H$. Then $n_p(G)$ satisfies $n_p \equiv 1 bmod p$. Furthermore, $n_p(P) \divides \abs{G/N_G(P)}$.
 
 > This is very powerful for classifying groups of a given order.
 > \- Joe
@@ -95,7 +95,7 @@ $$
 Suppose $[P_1 : N_{P_1}(P_i)] = 1$, then $P_1 = N_{P_1}(P_i)$. However this means that $N_{P_1}(P_i) \cap P_1 = P_1$, so $P_i \cap P_1 = P_1$. But $P_1$ and $P_i$ have the same order, so this would imply that $P_1 = P_i$, which is a contradiction. Thus, $\abs{O_j} > 1$. From the work above, recall that this implies that $p \divides \abs{O_j}$. Thus, the order of every $O_j$ is a multiple of $p$, except for $O_1$ which has order 1. This implies that
 
 $$
-\abs{\mathcal S} = \sum_j \abs{O_j} \equiv 1 \mod p
+\abs{\mathcal S} = \sum_j \abs{O_j} \equiv 1 bmod p
 $$
 
 [...]

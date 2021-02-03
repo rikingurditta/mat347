@@ -38,7 +38,7 @@ Let $a = E_{ij}$ (the matrix with a 1 in entry $i,j$ and 0s everywhere else)
 
 Then if $A = \curlies{a}$, then $RAR = R$.
 
-### Example: (x, 2) in $\Z[x]$
+### Example: $(x, 2)$ in $\Z[x]$
 
 Let $I = (x, 2)$ in the ring of polynomials over the integes $\Z[x]$. Then
 

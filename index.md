@@ -22,3 +22,6 @@
 16. [Ideals](16 ideals)
 17. [Rings of Fractions](17 rings of fractions)
 18. [Chinese Remainder Theorem](18 chinese remainder theorem)
+19. [Euclidean Domains and Principal Ideal Domains](19 euclidean domains and PIDs)
+20. [Multiples and Divisors](20 multiples and divisors)
+

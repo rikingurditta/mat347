@@ -194,8 +194,8 @@ Now we have a square-free but non-square number $D \in \Z$. We define $\omega$ a
 
 $$
 \omega = \begin{cases}
-\sqrt D & \text{if } D \cong 2, 3 \mod 4 \\
-\frac{1 + \sqrt D}{2} & \text{if } D \cong 1 \mod 4
+\sqrt D & \text{if } D \cong 2, 3 bmod 4 \\
+\frac{1 + \sqrt D}{2} & \text{if } D \cong 1 bmod 4
 \end{cases}
 $$
 
@@ -244,8 +244,8 @@ $r \overline r$ is called the norm of $r$. If $N(r) = r \overline r$ is the norm
 
 $$
 N(a + b\omega) = \begin{cases}
-a^2 - Db^2 & \text{if } D \cong 2, 3 \mod 4 \\
-a^2 + ab + \frac{1 - D}{4} b^2 & \text{if } D \cong 1 \mod 4
+a^2 - Db^2 & \text{if } D \cong 2, 3 bmod 4 \\
+a^2 + ab + \frac{1 - D}{4} b^2 & \text{if } D \cong 1 bmod 4
 \end{cases}
 $$
 
