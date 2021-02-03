@@ -120,6 +120,7 @@ N(b((s - p) + (t - q)i)) &= f(b((s - p) + (t - q)i)) \\
 $$
 
 > "Is everybody stunned by the sheer beauty of this, or is everybody confused as hell?"
+> 
 > \- Joe
 
 Thus, we have proved that $\Z[i]$ is a Euclidean domain, as we have shown that
