@@ -31,6 +31,7 @@ Note that irreducible and prime are equivalent in $\Z$ and $F[x]$ for any field 
 #### Primes are irreducible in integral domains
 
 Let $R$ be an integral domain. Suppose $p \in R$ is a prime and $p = ab$. Then $ab \in (p)$, which is a prime ideal, so either $a \in (p)$ or $b \in (p)$. Without loss of generality, assume $a \in (p)$, so $a = tp$ for some $t \in R$. Then
+
 $$
 \begin{align*}
 p &= ab \\
