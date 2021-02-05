@@ -24,4 +24,5 @@
 18. [Chinese Remainder Theorem](18 chinese remainder theorem)
 19. [Euclidean Domains and Principal Ideal Domains](19 euclidean domains and PIDs)
 20. [Multiples and Divisors](20 multiples and divisors)
+21. [Unique Factorization Domains](21 unique factorization domains)
 

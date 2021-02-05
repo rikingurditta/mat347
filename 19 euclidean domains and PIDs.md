@@ -102,13 +102,13 @@ $$
 a = (p + iq)b + b((s - p) + (t - q)i)
 $$
 
-$a$ is a Gaussian integer and so is $(p + iq)b$, so $b((s - p) + (t - q)i)$ must also be a Gaussian integer.
+$a$ is a Gaussian integer and so is $(p + iq)b$, so $r = b((s - p) + (t - q)i)$ must also be a Gaussian integer.
 
-Recall that for complex numbers, $f(x) = x\overline x$ is a multiplicative function (i.e. $f(xy) = f(x)f(y)$) and it has the same formula as the norm $N(x)$. Then, manipulating complex numbers and recalling that $\abs{p - s} \leq 1/2$ and $\abs{q - t} \leq 1/2$, we see:
+Recall that for complex numbers, $f(x) = x\overline x$ is a multiplicative function (i.e. $f(xy) = f(x)f(y)$) and it has the same formula $N(x)$. Then, manipulating complex numbers and recalling that $\abs{p - s} \leq 1/2$ and $\abs{q - t} \leq 1/2$, we see:
 
 $$
 \begin{align*}
-N(b((s - p) + (t - q)i)) &= f(b((s - p) + (t - q)i)) \\
+N(r) &= f(b((s - p) + (t - q)i)) \\
 &= f(b) f((s - p) + (t - q)i) \\
 &= N(b) f((s - p) + (t - q)i) \\
 &= N(b) ((s - p)^2 + (t - q)^2) \\
@@ -126,10 +126,10 @@ $$
 Thus, we have proved that $\Z[i]$ is a Euclidean domain, as we have shown that
 
 $$
-a = (p + iq)b + b((s - p) + (t - q)i)
+a = (p + iq)b + r
 $$
 
-with either $b((s - p) + (t - q)i) = 0$ or $N(b((s - p) + (t - q)i)) < N(b)$.
+with either $r = 0$ or $N(r) < N(b)$.
 
 ## Principal Ideal Domains
 
