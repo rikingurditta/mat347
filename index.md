@@ -25,4 +25,5 @@
 19. [Euclidean Domains and Principal Ideal Domains](19 euclidean domains and PIDs)
 20. [Multiples and Divisors](20 multiples and divisors)
 21. [Unique Factorization Domains](21 unique factorization domains)
+22. [Polynomial Rings](22 polynomial rings)
 
