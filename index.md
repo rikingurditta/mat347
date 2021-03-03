@@ -26,4 +26,5 @@
 20. [Multiples and Divisors](20 multiples and divisors)
 21. [Unique Factorization Domains](21 unique factorization domains)
 22. [Polynomial Rings](22 polynomial rings)
+23. [Modules](23 modules)
 
