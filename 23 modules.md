@@ -202,3 +202,30 @@ $$
 $$
 
 This works for index sets $I$ of any cardinality.
+
+### Universal property of the free module on $A$
+
+Let $A$ be any set without any structure, and let $R$ be a ring with identity. The **free module on $A$** is the direct sum of $\abs{A}$ copies of $R$, each copy indexed by an element of $A$.
+
+$$
+\underset{a \in A}{\oplus} R = \curlies{(r_a) : r_a = 0 \text{ except for only finitely many $a$'s}}
+$$
+
+Then we can think of $A$ as a subset of $\underset{a \in A}{\oplus} R$ by making a correspondence between $t \in A$ and the element
+
+$$
+i(a) = (x_a)_{a \in A} \text{ where } x_{t} = 1 \text{ and } x_a = 0 \text{ for all } a \neq t
+$$
+
+We can think of the map $i : A \to \underset{a \in A}{\oplus} R$ which makes this correspondence as an inclusion map.
+
+Suppose $L$ is an $R$-module, then we have the following *universal property*:
+
+If $\phi : A \to L$ is any map, then there is a unique homomorphism $\Phi : \underset{a \in A}{\oplus} R \to L$ so that the following diagram commutes:
+
+![universal property free module over A.png](universal property free module over A.png)
+
+i.e. we have the equality of maps $\phi(a) = \Phi(i(a))$.
+
+We know the value of $\Phi$ for every $i(a)$, i.e. every element which has a $1$ in one coordinate and $0$s everywhere else. However, these elements generate all of $\underset{a \in A}{\oplus} R$, so this determines the value of $\Phi$ for every element. This means $\Phi$ is unique. It is easy to show that $\Phi$ is a homomorphism.
+

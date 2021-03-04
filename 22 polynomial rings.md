@@ -124,6 +124,7 @@ Suppose $F$ is a field and $g(x) \in F[x]$. Suppose it can be factored as
 $$
 g(x) = f_1^{a_1}(x) \cdot ... \cdot f_k^{a_k}(x)
 $$
+
 Then for every pair $i, j$ the ideals $(f_i^{a_i}(x))$, $(f_j^{a_j}(x))$ are comaximal, so we can apply the Chinese remainder theorem to see that
 
 [...]
@@ -133,6 +134,7 @@ Then for every pair $i, j$ the ideals $(f_i^{a_i}(x))$, $(f_j^{a_j}(x))$ are com
 Suppose $F$ is a field and $G \leq F^\times$ is a finite subgroup. Then $G$ is cyclic.
 
 From the fundamental theorem of abelian groups, we know that
+
 $$
 G \cong \Z/n_1\Z \times ... \times \Z/n_k\Z
 $$
