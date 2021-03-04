@@ -27,4 +27,5 @@
 21. [Unique Factorization Domains](21 unique factorization domains)
 22. [Polynomial Rings](22 polynomial rings)
 23. [Modules](23 modules)
+24. [Tensor Products](23 tensor products)
 
