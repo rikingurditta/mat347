@@ -22,9 +22,11 @@ For now, assume that it is known that the alternating groups $A_n$ where $n \geq
 ## Fundamental theorem of finitely generated abelian groups
 
 A finitely generated group $G$ is isomorphic to
+
 $$
 \Z^r \times \Z_{n_1} \times ... \times \Z_{n_k} \text{ where } r \in \N \text{ and } n_{i+1} \divides n_i, 1 \leq i \leq k-1
 $$
+
 $r$ is called the **rank** (or Betti number) of $G$, and each $\Z_{n_i}$ is called an **invariant factor**.
 
 If $G$ is finite, then $\abs G = p_1^{a_1} \cdot ... \cdot p_k^{a_k}$, where each $p_i$ is a prime. 

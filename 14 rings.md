@@ -22,7 +22,7 @@ A **ring** is a set $R$ with two operations, $+$ and $\times$, which has the fol
 - $\times$ is associative
 - $R$ follows the two distributive laws:
   - $a (b + c) = ab + ac$
-  - $(a + b) c = ac + ab$
+  - $(a + b) c = ac + bc$
 
 A ring is **commutative** if $\times$ commutes. (We use the word commutative when we describe multiplication commuting and abelian when we discuss addition commuting.) $R$ is a ring **with unit** or **with identity** if there is an element $1 \in R$ so that $x \times 1 = 1 \times x = x$. Some books define a ring to be a ring with identity, some books have even weirder definitions.
 

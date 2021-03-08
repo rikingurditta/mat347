@@ -125,16 +125,74 @@ $$
 g(x) = f_1^{a_1}(x) \cdot ... \cdot f_k^{a_k}(x)
 $$
 
+where each $f_i(x)$ is irreducible and distinct.
+
 Then for every pair $i, j$ the ideals $(f_i^{a_i}(x))$, $(f_j^{a_j}(x))$ are comaximal, so we can apply the Chinese remainder theorem to see that
 
-[...]
+$$
+F[x]/(g(x)) = F[x]/(f_1^{a_1}(x)) \times ... \times F[x]/(f_k^{a_k}(x))
+$$
 
 ### Finite subgroups of $F^\times$
 
-Suppose $F$ is a field and $G \leq F^\times$ is a finite subgroup. Then $G$ is cyclic.
+Suppose $F$ is a field and $G \leq F^\times$ is a finite subgroup of the multiplicative group. Then $G$ is cyclic.
 
 From the fundamental theorem of abelian groups, we know that
 
 $$
 G \cong \Z/n_1\Z \times ... \times \Z/n_k\Z
 $$
+
+and each $n_i$ divides $n_{i+1}$, i.e. $n_1 \divides n_2$, $n_2 \divides n_3$, ..., $n_{k-1} \divides n_k$.
+
+For any cyclic group $C$, if $d$ divides $\abs C$, then there are $d$ elements of $C$ whose orders divide $d$. $n_1$ divides each of $n_1, ..., n_k$, so for each $i$, there are $n_1$ elements of $\Z/n_i \Z$ whose order divides $n_1$. Each of these elements determines an element of $G$ whose order divides $n_1$.Thus there are at least $k n_1$ elements of $G$ whose order divides $n_1$.
+
+This means that there are at least $kn_1$ elements of $G$ that are roots of the polynomial $p(x) = x^{n_1} - 1$. However, we know from the factor theorem that there can be at most $n_1$ roots of this polynomial, so $k = 1$. This means $G \cong Z/n_1 \Z$, so $G$ is cyclic.
+
+#### Corollary: $(\Z/p\Z)^\times$ is cyclic
+
+$\Z/p\Z$ is a field and $(\Z/p\Z)^\times$ is finite, so by the theorem above, it is cyclic.
+
+## Noetherian rings
+
+A **Noetherian ring** is a commutative ring with $1$ where every ideal is finitely generated.
+
+### Hilbert's basis theorem
+
+If $R$ is Noetherian, then so is $R[x]$.
+
+**Proof.**
+
+Suppose $I \subseteq R[x]$ is an ideal, and let $L$ be the set of all leading coefficients of polynomials in $I$. Then $L$ is an ideal in $R$, because of how polynomials add and multiply. Since $L$ is an ideal of $R$, it is finitely generated, so
+
+$$
+L = (a_1, ..., a_n)
+$$
+
+These are all leading coefficients in $I$, so there are elements
+
+$$
+f_1(x), ..., f_n(x)
+$$
+
+so that the leading coefficient of $f_i(x)$ is $a_i(x)$.
+
+Let $d_i = \deg(f_i(x))$, and $N = \max(d_i)$.
+
+If $d < N$, let $L_d$ be the set containing the leading coefficients of all polynomials in $I$ of degree $d$, as well as $0$. Then $L_d$ is an ideal in $R$, so it is finitely generated:
+
+$$
+L_d = (b_{d,1}, ..., b_{d,n_d})
+$$
+
+so there are polynomials $f_{d,1}(x), ..., f_{d,n_d}(x) \in I$ that all have degree $d$.
+
+Then, we claim that the set
+
+$$
+\curlies{f_1(x), ..., f_n(x)} \cup \curlies{f_{d, i} : 0 \leq d < N, 1 \leq i \leq n_d}
+$$
+
+generates $R[x]$.
+
+As a corollary, $F[x_1, ...., x_n]$ is Noetherian for every field $F$.
