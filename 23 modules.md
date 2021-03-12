@@ -10,6 +10,8 @@ $$
 \newcommand{\ndivides}{ {\large\not\mid} }
 \newcommand{\th}{^{\text{th}}}
 
+\DeclareMathOperator{\Hom}{Hom}
+
 \newcommand{\Sp}{\mathbb S}
 \newcommand{\F}{\mathbb F}
 $$
@@ -123,6 +125,8 @@ $$
 \end{align*}
 $$
 
+We denote the set of all $R$-module homomorphisms from $M \to N$ as $\Hom_R(M, N)$.
+
 We can define related notions in an unsurprising way:
 
 The **kernel** of $\phi$ is defined as usual, as $\inv \phi \curlies 0$. This is a submodule of $M$.
@@ -130,6 +134,12 @@ The **kernel** of $\phi$ is defined as usual, as $\inv \phi \curlies 0$. This is
 An **$R$-module isomorphism** is a homomorphism of $R$-modules that is bijective.
 
 $R$-modules $M$ and $N$ are **isomorphic** if there exists an $R$-module isomorphism between them. We write $M \cong_R N$ to denote that this is an isomorphism of $R$-modules, rather than simply an isomorphism of the underlying abelian groups.
+
+#### Structure of $\text{Hom}_R(M, N)$
+
+Note that homomorphisms $\phi, \psi \in \Hom_R(M, N)$ can be added and subtracted, and the zero homomorphism exists, so $\Hom_R(M, N)$ is an abelian group. If $r \in R$, then $r\phi$ is also a homomorphism, so $\Hom_R(M, N)$ is an $R$-module.
+
+Also note that if $\phi, \psi \in \Hom_R(M, M)$, then $\phi \circ \psi$ and $\psi \circ \phi$ are also homomorphisms. If we treat function composition as "multiplication", then $\Hom_R(M, M)$ becomes a ring. We call this the **endomorphism ring** of $M$, and denote it $\text{End}(M)$.
 
 #### Modules and homomorphisms between rings
 
